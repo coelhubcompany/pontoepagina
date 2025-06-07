@@ -29,18 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
       titulo: "A República",
       autor: "Platão",
       genero: "filosofia",
-      imagem: "republica.jpg",
-      pdf: "republica.pdf",
-      epub: "republica.epub"
+      imagem: "imagens/republica.jpg",
+      pdf: "pdfs/republica.pdf",
+      epub: "epubs/republica.epub"
     },
     {
       titulo: "Os Lusíadas",
       autor: "Luís de Camões",
       genero: "poesia",
-      imagem: "lusíadas.jpg",
-      pdf: "lusíadas.pdf",
-      epub: "lusíadas.epub"
-    },
+      imagem: "imagens/lusíadas.jpg",
+      pdf: "pdfs/lusíadas.pdf",
+      epub: "epubs/lusíadas.epub"
+    }
     // Adicione mais livros conforme necessário
   ];
 
