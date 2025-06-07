@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
       titulo: "Dom Casmurro",
       autor: "Machado de Assis",
       genero: "romance",
-      imagem: "dom-casmurro.jpg",
-      pdf: "dom-casmurro.pdf",
-      epub: "dom-casmurro.epub"
+      imagem: "domcasmurro.jpg",
+      pdf: "domcasmurro.pdf",
+      epub: "domcasmurro.epub"
     },
     {
       titulo: "A República",
