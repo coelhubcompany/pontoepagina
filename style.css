@@ -192,3 +192,17 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.ler-online-btn {
+  background: #e9e9e9;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.ler-online-btn:hover {
+  background-color: #d3d3d3;
+}
