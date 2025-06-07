@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Pública Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Biblioteca Pública</h1>
+    <p id="frase-literaria">"A leitura é para o intelecto o que o exercício é para o corpo." – Joseph Addison</p>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar livros...">
+      <button id="searchButton">🔍</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="generos">
+      <h2>Gêneros</h2>
+      <div class="genero-lista">
+        <button class="genero-btn" data-genero="ficcao">Ficção</button>
+        <button class="genero-btn" data-genero="aventura">Aventura</button>
+        <button class="genero-btn" data-genero="historia">História</button>
+        <button class="genero-btn" data-genero="poesia">Poesia</button>
+        <button class="genero-btn" data-genero="filosofia">Filosofia</button>
+        <button class="genero-btn" data-genero="ciencia">Ciência</button>
+        <button class="genero-btn" data-genero="biografia">Biografia</button>
+        <button class="genero-btn" data-genero="romance">Romance</button>
+        <button class="genero-btn" data-genero="teatro">Teatro</button>
+        <!-- Adicione mais gêneros conforme necessário -->
+      </div>
+    </section>
+
+    <section id="livros">
+      <h2>Livros em Destaque</h2>
+      <div class="livros-container" id="livrosContainer">
+        <!-- Exemplo de livro -->
+        <div class="livro" data-genero="ficcao">
+          <img src="capa-exemplo.jpg" alt="Capa do livro">
+          <h3>Nome do Livro</h3>
+          <p>Autor Exemplo</p>
+          <div class="livro-acoes">
+            <button class="like-btn">❤️</button>
+            <a href="livro.pdf" download class="baixar-btn">📥 PDF</a>
+            <a href="livro.epub" download class="baixar-btn">📘 EPUB</a>
+          </div>
+        </div>
+        <!-- Mais livros serão inseridos dinamicamente -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Biblioteca Pública Online. Domínio Público.</p>
+  </footer>
+</body>
+</html>
