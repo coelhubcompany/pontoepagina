@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <button class="like-btn ${isLiked ? 'liked' : ''}">${isLiked ? '💖' : '❤️'}</button>
           <a href="${livro.pdf}" download class="baixar-btn">📥 PDF</a>
           <a href="${livro.epub}" download class="baixar-btn">📘 EPUB</a>
-          <a href="leitor.html?livro=${livro.epub}" class="ler-online-btn">📖 Ler online</a>
+          <a href="leitor.html?livro=epubs/${livro.epub}" class="ler-online-btn">📖 Ler online</a>
         </div>
       `;
       livrosContainer.appendChild(div);
