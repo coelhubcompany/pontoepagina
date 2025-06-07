@@ -1,0 +1,194 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#frase-literaria {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#searchButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #4a90e2;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+#generos h2,
+#livros h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.genero-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.genero-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #4a90e2;
+  background-color: white;
+  color: #4a90e2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.genero-btn:hover,
+.genero-btn.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.livros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.livro {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.livro:hover {
+  transform: translateY(-5px);
+}
+
+.livro img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.livro h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.livro p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.livro-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.like-btn,
+.baixar-btn {
+  background: #e9e9e9;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.like-btn:hover,
+.baixar-btn:hover {
+  background-color: #d3d3d3;
+}
+
+.like-btn.liked {
+  background-color: #ffc0cb;
+  color: #b30000;
+}
+
+footer {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  #frase-literaria {
+    font-size: 0.9rem;
+  }
+  .search-container {
+    width: 90%;
+  }
+  .genero-lista {
+    justify-content: center;
+  }
+  .livros-container {
+    grid-template-columns: 1fr;
+  }
+}
